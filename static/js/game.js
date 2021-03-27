@@ -8,5 +8,8 @@ socket.on("connect", () => {
     }
 });
 
-
+socket.on("addUser", data => {
+    console.log("Hello, " + data);
+    $(".playersList").append("<p class='player'>" + data + "<p>");
+})
 
